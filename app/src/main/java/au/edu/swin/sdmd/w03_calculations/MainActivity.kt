@@ -1,7 +1,6 @@
 package au.edu.swin.sdmd.w03_calculations
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.Button
 import android.widget.TextView
