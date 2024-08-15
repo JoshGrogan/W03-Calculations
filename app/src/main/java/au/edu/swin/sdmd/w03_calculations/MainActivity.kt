@@ -29,12 +29,11 @@ class MainActivity : AppCompatActivity() {
             val results = add(number1.text.toString(), number2.text.toString())
             // TODO: show result on the screen
             val answer = findViewById<TextView>(R.id.answer)
-            answer.text = results
+            answer.text = results.toString()
         }
     }
 
     // adds two numbers together
-    private fun add(number1: String, number2: String) = number1 + number2
-
+    private fun add(number1: String, number2: String) = number1.toInt() + number2.toInt()
 
 }
