@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val number2 = findViewById<EditText>(R.id.number2)
 
         val equals = findViewById<Button>(R.id.equals)
-        equals.setOnClickListener {
+        equals.setOnClickListener { //This is the line that sets up the listener.
             val results = add(number1.text.toString(), number2.text.toString())
             // TODO: show result on the screen
             val answer = findViewById<TextView>(R.id.answer)
