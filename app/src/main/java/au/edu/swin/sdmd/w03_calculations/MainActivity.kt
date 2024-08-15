@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         equals.setOnClickListener {
             val result = add(number1.text.toString(), number2.text.toString())
             // TODO: show result on the screen
+            val answer = findViewById<TextView>(R.id.answer)
+            answer.text = result
         }
     }
 
